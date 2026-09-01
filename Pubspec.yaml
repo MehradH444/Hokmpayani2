@@ -1,0 +1,44 @@
+name: hokm_master
+description: A professional-grade real-time multiplayer Hokm card game built with Flutter.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # ارتباط زنده با سرور سوکت
+  socket_io_client: ^2.0.3
+  
+  # مدیریت وضعیت (State Management)
+  provider: ^6.1.1
+  
+  # ذخیره‌سازی محلی توکن و تنظیمات کاربر
+  shared_preferences: ^2.2.2
+  
+  # ارتباطات HTTP با سرور REST API
+  http: ^1.2.0
+  
+  # پشتیبانی از تصاویر برداری SVG (پوسته‌ها و کارت‌ها)
+  flutter_svg: ^2.0.9
+  
+  # پخش افکت‌های صوتی و موزیک پس‌زمینه
+  just_audio: ^0.9.36
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # تعریف دارایی‌ها و پوشه گرافیک بازی
+  assets:
+    - assets/images/
+    - assets/cards/
+    - assets/sounds/
+    - assets/stickers/
