@@ -1,3 +1,4 @@
+cat << 'EOF' > server.js
 /**
  * Main Application Server Entry Point
  * File: server.js
@@ -12,8 +13,8 @@ const cors = require('cors');
 
 const connectDB = require('./db');
 const routes = require('./routes');
-const { socketAuth } = require('./authMiddleware');
-const socketHandler = require('./socketHandler');
+const { socketAuth } = require('./authmiddleware');
+const socketHandler = require('./sockethandler');
 
 // ۱. مقداردهی اولیه برنامه Express و ایجاد سرور HTTP
 const app = express();
@@ -66,3 +67,4 @@ server.listen(PORT, () => {
 process.on('unhandledRejection', (err) => {
   console.error(`[Unhandled Rejection]: ${err.message}`);
 });
+EOF
