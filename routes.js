@@ -10,7 +10,7 @@ const router = express.Router();
 // بارگذاری کنترلرها و میدل‌ور امنیتی (نام فایل‌ها مطابق با گیت‌هاب اصلاح شد)
 const authController = require('./authcontroller');
 const gameController = require('./gamecontroller');
-const { protect } = require('./authmiddleware');
+const { protect } = require('./authMiddleware');
 
 /* ==========================================================================
    ۱. مسیرهای احراز هویت و حساب کاربری (Authentication Routes)
